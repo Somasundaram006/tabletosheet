@@ -1,0 +1,123 @@
+.footerWrapper {
+    background-size: cover;
+    padding: 10% 0% 5% 6%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    background-color: #0c121c;
+    grid-gap: 20px;
+}
+
+.footerPages {
+    padding-bottom: 1%;
+}
+
+.footerHeading {
+    margin-top: -8%;
+}
+.footerHeading2{
+    margin-top: 10px;
+}
+
+.footerWrapper>div {
+    color: white;
+}
+
+.infoIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.infoStyle {
+    font-weight: 300;
+    line-height: 26px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.footerAbout {
+    font-weight: 300;
+    line-height: 26px;
+    font-size: 16px;
+}
+
+.socialIcon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.headStyle {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.headStyle>div,
+.compCopyright {
+    font-weight: 300;
+    line-height: 26px;
+    font-size: 16px;
+}
+
+.compCopyright {
+    padding-top: 5rem;
+}
+
+.footerLinks:focus,
+.footerLinks:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footerLinks {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .footerWrapper {
+        grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+    }
+
+    .footerDivider {
+        border-right: none;
+        height: 0%;
+    }
+
+    .footerHeading {
+        margin-top: 0%;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .footerWrapper {
+        padding: 10% 0% 5% 5%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .compCopyright {
+        display: none;
+    }
+
+    .footerLogoWrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerWrapper {
+        padding: 5% 10%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footerWrapper {
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    }
+
+    .footerDivider {
+        border-right: 1px solid#f1cb05;
+        height: 0%;
+    }
+}
